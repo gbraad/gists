@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <!--
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="//webridge.local/scripts/jquery-1.8.1.js"></script>
+    -->
+    <script>document.log = function(text) { $('#console').append(text+'\n'); };</script>
+    <script>
+	$(function() {
+	  var task = $.Deferred();
+
+	  task.done(function(data) {    // if(true) { .. }
+	     document.log("Finished "+ data.answer);
+	  });
+	  task.fail(function(data) {    // if(false) { .. }
+	    document.log("Overtime " + data.answer);
+	  });
+	  task.always(function(data) {  // (try-catch)-finally
+		document.log("Cleanup " + data.answer);
+	  });
+
+	  task.then(function(data) {    // if(true) { [do] }
+		document.log("Make coffee " + data.answer);
+	  });
+
+      document.log("Task is " + task.state());
+	  task.resolve({answer: 42});
+	  //task.reject(13);
+
+	  task.then(function(data) {    // do when resolved
+		document.log("Take a rest " + data.answer);
+	  });
+      
+      document.log("Task is " + task.state());
+	});
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>Output</h1>
+      <pre id="console"></pre>
+    </section>
+  </body>
+</html>

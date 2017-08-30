@@ -1,0 +1,870 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Use Minishift docker to run Eclipse Che · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../53308315106277034c2400c69d043001/" />
+    
+    
+    <link rel="prev" href="../aa5273d7021f724560dd8b5e0cafd100/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../36c572fe58aeee703c829c94d9dc8a95/">
+            
+                <a href="../36c572fe58aeee703c829c94d9dc8a95/">
+            
+                    
+                    Spin-up test Atomic Host with OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../6dc4ac1d6ac69c1de52aa69fbec94f6e/">
+            
+                <a href="../6dc4ac1d6ac69c1de52aa69fbec94f6e/">
+            
+                    
+                    12 Factor Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../f1fd4efdc4699d5d98bb7e6680b7a157/">
+            
+                <a href="../f1fd4efdc4699d5d98bb7e6680b7a157/">
+            
+                    
+                    Building Ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../fd4c79dd67c14351bea021d47c784775/">
+            
+                <a href="../fd4c79dd67c14351bea021d47c784775/">
+            
+                    
+                    Upload Fedora cloud image to OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../08852c5e9d79c29bb3d22ad630dac8d2/">
+            
+                <a href="../08852c5e9d79c29bb3d22ad630dac8d2/">
+            
+                    
+                    Photon OS on OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../e18f9da84399a8028f66176f53ff7bb6/">
+            
+                <a href="../e18f9da84399a8028f66176f53ff7bb6/">
+            
+                    
+                    Steam and Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../b16a8cb159a50f303205335bb452f655/">
+            
+                <a href="../b16a8cb159a50f303205335bb452f655/">
+            
+                    
+                    Keystone from source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../e82edffb671a5dd154a939491514f7f8/">
+            
+                <a href="../e82edffb671a5dd154a939491514f7f8/">
+            
+                    
+                    Deploy ruby-ex with an OpenShift test environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../eaeb278460ca158a0fac9c5a3e71bfe8/">
+            
+                <a href="../eaeb278460ca158a0fac9c5a3e71bfe8/">
+            
+                    
+                    Create custom Fedora Atomic Host for OpenStack Magnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../454e852474e5bd976033c1c40feee0cf/">
+            
+                <a href="../454e852474e5bd976033c1c40feee0cf/">
+            
+                    
+                    Restart devel environment 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../04fdad7277463d2544a8f2fa9bebee72/">
+            
+                <a href="../04fdad7277463d2544a8f2fa9bebee72/">
+            
+                    
+                    Deploy an OpenShift cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../1496f8847e6cf2d6a695d63616631a1e/">
+            
+                <a href="../1496f8847e6cf2d6a695d63616631a1e/">
+            
+                    
+                    Setup environment for Minishift development [WIP]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../f95e3d7cc746957b073d659ff620c0fd/">
+            
+                <a href="../f95e3d7cc746957b073d659ff620c0fd/">
+            
+                    
+                    Setup development environment for Minishift on Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../6e49a98b7b33b457f5ebcb787c94fc10/">
+            
+                <a href="../6e49a98b7b33b457f5ebcb787c94fc10/">
+            
+                    
+                    Reset wireless to get DHCP assigned again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../c66c7f00c101e34f8d7db2b2cbe9b943/">
+            
+                <a href="../c66c7f00c101e34f8d7db2b2cbe9b943/">
+            
+                    
+                    Minishift hostfolders (manual mounting)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../18607310e0b122eb3790558e6f4d0795/">
+            
+                <a href="../18607310e0b122eb3790558e6f4d0795/">
+            
+                    
+                    Eclipse Che on Minishift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../ba9ae20dc0c1e05c36ad39c3ae444904/">
+            
+                <a href="../ba9ae20dc0c1e05c36ad39c3ae444904/">
+            
+                    
+                    Use Minishift as a Docker platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../aa5273d7021f724560dd8b5e0cafd100/">
+            
+                <a href="../aa5273d7021f724560dd8b5e0cafd100/">
+            
+                    
+                    Run Eclipse Che
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.20" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Use Minishift docker to run Eclipse Che
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../53308315106277034c2400c69d043001/">
+            
+                <a href="../53308315106277034c2400c69d043001/">
+            
+                    
+                    Visual Studio 2017 - Tomorrow Night Bright
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../463512b065ef1f919e63552138d776bf/">
+            
+                <a href="../463512b065ef1f919e63552138d776bf/">
+            
+                    
+                    Query installed and available updates on Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../d0c4e7396727bd362cd67e1e9e023385/">
+            
+                <a href="../d0c4e7396727bd362cd67e1e9e023385/">
+            
+                    
+                    PsNee, an open source stealth modchip for the Sony Playstation 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../c2cba6cde46eb7968c5e8be974371dde/">
+            
+                <a href="../c2cba6cde46eb7968c5e8be974371dde/">
+            
+                    
+                    Test of goroutines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../e0aff56b57400f7dfc1f85dbe4ad7967/">
+            
+                <a href="../e0aff56b57400f7dfc1f85dbe4ad7967/">
+            
+                    
+                    Minishift hostfolders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../514a5bb99781961694e7615ee145af83/">
+            
+                <a href="../514a5bb99781961694e7615ee145af83/">
+            
+                    
+                    Exploring MobyLinuxVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../7cb36210bd5effdeb788c34d6b433ac8/">
+            
+                <a href="../7cb36210bd5effdeb788c34d6b433ac8/">
+            
+                    
+                    Minishift registry mirror
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../113ef636903c67b83b4878cd43d2dd3f/">
+            
+                <a href="../113ef636903c67b83b4878cd43d2dd3f/">
+            
+                    
+                    C9 IDE on Docker for ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../7df1ac9c89d5be7086af67fa981f8e50/">
+            
+                <a href="../7df1ac9c89d5be7086af67fa981f8e50/">
+            
+                    
+                    Add swap to virtual machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../938802/">
+            
+                <a href="../938802/">
+            
+                    
+                    Example of how to use BugzillaClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../2436886/">
+            
+                <a href="../2436886/">
+            
+                    
+                    Git post-update hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../2885828/">
+            
+                <a href="../2885828/">
+            
+                    
+                    The core algorithm/TOTP implementation used by GAuth: http://github.com/gbraad/gauth/
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../a4226d855d4f6e2e8d5a/">
+            
+                <a href="../a4226d855d4f6e2e8d5a/">
+            
+                    
+                    Deferred javaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="../d0b627f911d07bd441ed/">
+            
+                <a href="../d0b627f911d07bd441ed/">
+            
+                    
+                    Import SSH-keys from GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="../9ae58142919b79964f82/">
+            
+                <a href="../9ae58142919b79964f82/">
+            
+                    
+                    Testfile for HTML rendering of ePUB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="../0267fde061e30e8a2978/">
+            
+                <a href="../0267fde061e30e8a2978/">
+            
+                    
+                    CardForge custom user decks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="../927860c0c7be21df14de/">
+            
+                <a href="../927860c0c7be21df14de/">
+            
+                    
+                    Fling website to MatchStick or flingd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="../1830e1183d10be5b63e9/">
+            
+                <a href="../1830e1183d10be5b63e9/">
+            
+                    
+                    On-device deployment of system-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="../e87063d14da6535b88a6/README.md">
+            
+                <span>
+            
+                    
+                    Boadgame alternative wishlist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="../74cf1e795763dc33997a/README.md">
+            
+                <span>
+            
+                    
+                    Install C9 on CentOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.41" data-path="../18f7417ce4a5dae8aeb808fd58b3943d/">
+            
+                <a href="../18f7417ce4a5dae8aeb808fd58b3943d/">
+            
+                    
+                    Fragile Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.42" data-path="../b4de477a892c9ff9b890d9c6ae8445bd/">
+            
+                <a href="../b4de477a892c9ff9b890d9c6ae8445bd/">
+            
+                    
+                    Install TripleO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.43" data-path="../51bcd499dd7def19a1213381a1468f16/">
+            
+                <a href="../51bcd499dd7def19a1213381a1468f16/">
+            
+                    
+                    Install TripleO on baremetal using Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.44" data-path="../14ecfb87a2f90c6de05fe0eec5206f17/">
+            
+                <a href="../14ecfb87a2f90c6de05fe0eec5206f17/">
+            
+                    
+                    Install one-liners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.45" data-path="../45cbe30415b0dc631f5e8d20beaffebf/">
+            
+                <a href="../45cbe30415b0dc631f5e8d20beaffebf/">
+            
+                    
+                    Download TripleO images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.46" data-path="../24d84409bab816ce496e3ad1418705e5/">
+            
+                <a href="../24d84409bab816ce496e3ad1418705e5/">
+            
+                    
+                    Import debootstrap into Docker container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47" data-path="../f2b364d1fb3533b8b5b32dc37ea2865c/">
+            
+                <a href="../f2b364d1fb3533b8b5b32dc37ea2865c/">
+            
+                    
+                    Installing Ironic standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48" data-path="../14b19653a7124b4cf86daaa9df736b90/">
+            
+                <a href="../14b19653a7124b4cf86daaa9df736b90/">
+            
+                    
+                    Generate HTML directory index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49" data-path="../74e47af442ef2fb4abc68c12a610f44f/">
+            
+                <a href="../74e47af442ef2fb4abc68c12a610f44f/">
+            
+                    
+                    Add swap using Ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Use Minishift docker to run Eclipse Che</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="use-minishift-docker-to-run-eclipse-che">Use Minishift docker to run Eclipse Che</h1>
+<pre><code>$ minishift start \
+  --cpus 2 \
+  --memory 4096 \
+  --iso-url=https://github.com/minishift/minishift-centos-iso/releases/download/v1.0.0-rc.3/minishift-centos7.iso
+$ minishift ssh &quot;mkdir -p /mnt/sda1/chedata&quot;
+$ alias minidocker=&quot;docker -H tcp://`minishift ip`:2376 \
+  --tls --tlscacert=$PWD/.minishift/certs/ca.pem
+  --tlscert=$PWD/.minishift/certs/cert.pem
+  --tlskey=$PWD/.minishift/certs/key.pem&quot;
+$ minidocker run \
+  --name che \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /mnt/sda1/chedata:/data:Z \
+  -e CHE_DOCKER_SERVER__EVALUATION__STRATEGY=docker-local \
+  --security-opt label:disable \
+  eclipse/che start
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../aa5273d7021f724560dd8b5e0cafd100/" class="navigation navigation-prev " aria-label="Previous page: Run Eclipse Che">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../53308315106277034c2400c69d043001/" class="navigation navigation-next " aria-label="Next page: Visual Studio 2017 - Tomorrow Night Bright">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Use Minishift docker to run Eclipse Che","level":"1.20","depth":1,"next":{"title":"Visual Studio 2017 - Tomorrow Night Bright","level":"1.21","depth":1,"path":"gists/53308315106277034c2400c69d043001/README.md","ref":"gists/53308315106277034c2400c69d043001/README.md","articles":[]},"previous":{"title":"Run Eclipse Che","level":"1.19","depth":1,"path":"gists/aa5273d7021f724560dd8b5e0cafd100/README.md","ref":"gists/aa5273d7021f724560dd8b5e0cafd100/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gists/ac1be4bcbd47513acf1aa4a56e28094e/README.md","mtime":"2017-08-30T14:57:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-30T14:57:33.167Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

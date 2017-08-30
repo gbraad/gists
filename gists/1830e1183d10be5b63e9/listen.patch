@@ -1,0 +1,13 @@
+*** ./node_modules/haibu-carapace/lib/plugins/net.js	2015-11-03 13:58:47.851988768 +0800
+--- ./node_modules/haibu-carapace/lib/plugins/net.js	2015-11-03 14:03:01.992934521 +0800
+***************
+*** 217,220 ****
+  // Setup the valid `nodeVersion` for all of the 
+  // monkey patches to `require('net')`.
+  //
+! module.exports._listen2.nodeVersion = '0.5.x || 0.6.x || 0.7.x || 0.8.x';
+--- 217,220 ----
+  // Setup the valid `nodeVersion` for all of the 
+  // monkey patches to `require('net')`.
+  //
+! module.exports._listen2.nodeVersion = '0.5.x || 0.6.x || 0.7.x || 0.8.x || 0.10.x || 2.2.x';

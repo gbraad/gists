@@ -1,0 +1,8 @@
+overcloud_nodes:
+
+extra_args: >-
+  --control-scale 1
+  --control-flavor control
+  --compute-scale 1
+  --compute-flavor compute
+  --ntp-server pool.ntp.org
